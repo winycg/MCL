@@ -1,0 +1,18 @@
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_n_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_branches=2, num_workers=8, resume=False, resume_checkpoint='./checkpoint/resnet32_n.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_n_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_workers=8, number_net=2, resume=False, resume_checkpoint='./checkpoint/resnet32_n.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_n_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_workers=8, number_net=2, resume=False, resume_checkpoint='./checkpoint/resnet32_n.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_n_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_workers=8, number_net=4, resume=False, resume_checkpoint='./checkpoint/resnet32_n.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_workers=8, number_net=2, resume=False, resume_checkpoint='./checkpoint/resnet32.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
+==========
+Args:Namespace(alpha=0.1, arch='hcgnet_A1', batch_size=128, beta=0.1, checkpoint_dir='./checkpoint', data='/home/ycg/hhd/dataset/', dataset='cifar100', epochs=300, evaluate=False, evaluate_checkpoint='./checkpoint/resnet32_best.pth.tar', feat_dim=128, gamma=1.0, gpu_id='0', init_lr=0.1, kd_T=3, lam=1.0, logit_distill=True, lr_type='cosine', manual_seed=0, milestones=[150, 225], num_workers=8, number_net=2, resume=False, resume_checkpoint='./checkpoint/resnet32.pth.tar', tau=0.07, weight_decay=0.0005)
+==========
