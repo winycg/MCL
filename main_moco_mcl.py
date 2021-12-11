@@ -107,6 +107,8 @@ parser.add_argument('--cos', action='store_true',
 def main():
     args = parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_ids
+    if not os.path.isdir(args.checkpoint):
+        os.makedirs(args.checkpoint)
     args.log_txt = os.path.join(args.checkpoint, 'imagenet_' + args.arch + '_moco.txt')
     if args.seed is not None:
         random.seed(args.seed)

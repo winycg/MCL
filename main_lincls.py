@@ -89,6 +89,8 @@ best_acc1 = 0
 
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_ids
+if not os.path.isdir(args.checkpoint):
+    os.makedirs(args.checkpoint)
 args.log_txt = os.path.join(args.checkpoint, 'imagenet_mcl_' + args.arch + '_moco.txt')
 def main():
     if args.seed is not None:
