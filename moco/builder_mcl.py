@@ -46,14 +46,9 @@ class MoCo(nn.Module):
 
         if mlp:  # hack: brute-force replacement
             dim_mlp = self.encoder_q_0.fc.weight.shape[1]
-            #for i in range(self.number_net):   
-            #self.encoder_q_0.fc = nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), self.encoder_q_0.fc)
-            #self.encoder_q_1.fc = nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), self.encoder_q_1.fc)
-            setattr(self, 'encoder_q_' + str(i)+'.fc', nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), getattr(self, 'encoder_q_' + str(i)).fc))
-            setattr(self, 'encoder_k_' + str(i)+'.fc', nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), getattr(self, 'encoder_k_' + str(i)).fc))
-
-            #self.encoder_k_0.fc = nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), self.encoder_k_0.fc)
-            #self.encoder_k_1.fc = nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), self.encoder_k_1.fc)
+            for i in range(self.number_net):   
+                setattr(self, 'encoder_q_' + str(i)+'.fc', nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), getattr(self, 'encoder_q_' + str(i)).fc))
+                setattr(self, 'encoder_k_' + str(i)+'.fc', nn.Sequential(nn.Linear(dim_mlp, dim_mlp), nn.ReLU(), getattr(self, 'encoder_k_' + str(i)).fc))
 
         for i in range(self.number_net):
             for param_q, param_k in zip(getattr(self, 'encoder_q_' + str(i)).parameters(), getattr(self, 'encoder_k_' + str(i)).parameters()):
