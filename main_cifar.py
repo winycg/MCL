@@ -141,7 +141,6 @@ def train(epoch, criterion_list, optimizer):
     criterion_mcl = criterion_list[2]
 
     net.train()
-    graph_list.train()
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         batch_start_time = time.time()
         inputs = inputs.float().cuda()
@@ -296,10 +295,6 @@ if __name__ == '__main__':
 
         criterion_mcl = Sup_MCL_Loss(args)
         trainable_list.append(criterion_mcl.embed_list)
-
-        graph_list = nn.ModuleList([])
-        graph_list.append(net)
-        graph_list.append(criterion_mcl.embed_list)
 
         optimizer = optim.SGD(trainable_list.parameters(),
                               lr=0.1, momentum=0.9, weight_decay=args.weight_decay, nesterov=True)
