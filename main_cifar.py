@@ -46,7 +46,7 @@ parser.add_argument('--logit-distill', action='store_true', help='combine with l
 parser.add_argument('--checkpoint-dir', default='./checkpoint', type=str, help='checkpoint directory')
 
 parser.add_argument('--kd_T', type=float, default=3, help='temperature of KL-divergence')
-parser.add_argument('--tau', default=0.07, type=float, help='temperature for contrastive distribution')
+parser.add_argument('--tau', default=0.1, type=float, help='temperature for contrastive distribution')
 parser.add_argument('--alpha', type=float, default=0., help='weight balance for VCL')
 parser.add_argument('--gamma', type=float, default=0., help='weight balance for Soft VCL')
 parser.add_argument('--beta', type=float, default=0., help='weight balance for ICL')
