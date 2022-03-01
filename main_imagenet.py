@@ -267,7 +267,7 @@ if __name__ == '__main__':
         net.module.load_state_dict(checkpoint['net'])
         best_acc = checkpoint['acc']
         start_epoch = checkpoint['epoch'] + 1
-        test(start_epoch, criterion_cls, criterion_div)
+        test(start_epoch, criterion_ce)
     else:
         trainable_list = nn.ModuleList([])
         trainable_list.append(net)
