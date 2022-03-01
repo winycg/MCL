@@ -91,7 +91,7 @@ data/ImageNet
 
 ### Training two networks by MCL
 ```
-python main_cifar.py --arch resnet18  --number-net 2 \
+python main_imagenet.py --arch resnet18  --number-net 2 \
     --alpha 0.1 --gamma 1. --beta 0.1 --lam 1. 
 ```
 More commands for training various architectures can be found in `scripts/train_imagenet_mcl.sh`
@@ -105,7 +105,7 @@ We perform all experiments on a single NVIDIA Tesla V100 GPU (32GB) with three r
 
 ### Training two networks by MCL combined with logit distillation
 ```
-python main_cifar.py --arch resnet18  --number-net 2 \
+python main_imagenet.py --arch resnet18  --number-net 2 \
     --alpha 0.1 --gamma 1. --beta 0.1 --lam 1. 
 ```
 More commands for training various architectures can be found in `scripts/train_imagenet_mcl.sh`
